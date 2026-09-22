@@ -201,5 +201,33 @@ says the directory table is withdrawn. That page is out of date and I no longer
 hold the credential to redeploy it. This page is the current one.</p>
 </footer>
 
+<!-- amont-t90 : debut du report de referent -->
+<script>
+(function () {
+  // Le nom d hote du referent, et RIEN d autre : ni chemin, ni requete, ni
+  // fragment. Refus CHEMIN_FUITE du tour 90.
+  var source = (function () {
+    try {
+      if (!document.referrer) { return "direct"; }
+      var hote = new URL(document.referrer).hostname.toLowerCase();
+      if (!hote) { return "inconnu"; }
+      if (hote === location.hostname.toLowerCase()) { return "interne"; }
+      hote = hote.replace(/^www\./, "");
+      hote = hote.replace(/[^a-z0-9.-]/g, "");
+      return hote.slice(0, 60) || "inconnu";
+    } catch (e) { return "inconnu"; }
+  })();
+  // Seuls MES rails sont reecrits. Refus HOTE_ETRANGER du tour 90.
+  var rails = document.querySelectorAll('a[href^="https://buy.stripe.com/"]');
+  for (var i = 0; i < rails.length; i++) {
+    var u;
+    try { u = new URL(rails[i].href); } catch (e) { continue; }
+    if (u.searchParams.get("client_reference_id")) { continue; }
+    u.searchParams.set("client_reference_id", source);
+    rails[i].href = u.toString();
+  }
+})();
+</script>
+<!-- amont-t90 : fin du report de referent -->
 </body>
 </html>
