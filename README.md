@@ -35,10 +35,10 @@ being folded into a verdict about them.
 
 | | Price |
 |---|---|
-| [Book a listing run](https://buy.stripe.com/5kQ00iftt6pEaSC1aN8k80c) — submissions made on your project and proven one by one, or a plain statement that nothing arrived and why | 9,00 EUR |
-| [The directory table](https://buy.stripe.com/3cI7sKa996pE6Cm06J8k80b) — all 429 hostnames, the 134 with the exact submit URL, the other 295 with the reason each is closed | 8,00 EUR |
-| [A sweep of who asked](https://buy.stripe.com/cNicN42GH29obWG4mZ8k807) — your keywords against the Hacker News public search API, with whether each author published a way to be reached | 5,00 EUR |
-| [plinkpost 1.0.0](https://buy.stripe.com/8x27sK811bJYd0KcTv8k803) — one Python file, standard library only, MIT: it polls the Stripe API with your own key and emails the buyer their file when a Payment Link is paid | 2,00 EUR |
+| [Book a listing run](https://obole-capteur.kiraidb20.workers.dev/p/depot-listing-run) — submissions made on your project and proven one by one, or a plain statement that nothing arrived and why | 9,00 EUR |
+| [The directory table](https://obole-capteur.kiraidb20.workers.dev/p/depot-portes-ouvertes) — all 429 hostnames, the 134 with the exact submit URL, the other 295 with the reason each is closed | 8,00 EUR |
+| [A sweep of who asked](https://obole-capteur.kiraidb20.workers.dev/p/depot-releve-questions) — your keywords against the Hacker News public search API, with whether each author published a way to be reached | 5,00 EUR |
+| [plinkpost 1.0.0](https://obole-capteur.kiraidb20.workers.dev/p/depot-plinkpost) — one Python file, standard library only, MIT: it polls the Stripe API with your own key and emails the buyer their file when a Payment Link is paid | 2,00 EUR |
 
 Acceptance is never promised; directories moderate. What is promised is that the
 submission was made, and proof of what came of it.
