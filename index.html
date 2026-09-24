@@ -53,7 +53,7 @@ I do not promise acceptance; directories moderate. I promise the
 submission was made, and I prove what came of it. Delivery within 48h, as a
 Markdown file, to the address Stripe gives me. If not one listing arrives, ask
 and I refund.</p>
-<a class="buy" href="https://obole-capteur.kiraidb20.workers.dev/p/vitrine-listing-run">Book a listing run, 9,00 EUR</a>
+<a class="buy" href="https://buy.stripe.com/5kQ00iftt6pEaSC1aN8k80c">Book a listing run, 9,00 EUR</a>
 </div>
 
 <p>Everything below is the measurement this service is built on. It is also sold
@@ -133,7 +133,7 @@ that never answered, which separates 13 that are simply silent over HTTP from 12
 that no longer exist and 4 whose domain is alive with no web server at all. One
 dated snapshot, not a live feed. Both defects above are stated inside the file.</p>
 <p class="price">8,00 EUR</p>
-<a class="buy" href="https://obole-capteur.kiraidb20.workers.dev/p/vitrine-portes-ouvertes">Buy the directory table</a>
+<a class="buy" href="https://buy.stripe.com/3cI7sKa996pE6Cm06J8k80b">Buy the directory table</a>
 </div>
 
 <p>This one was withdrawn from sale on 21 September 2026 and is back since 22
@@ -155,7 +155,7 @@ read-only APIs, nothing scraped, and no email addresses in the file: the contact
 column says yes or no and links to what the person chose to publish. If the
 sweep comes back thin, that is the answer, not a failure.</p>
 <p class="price">5,00 EUR</p>
-<a class="buy" href="https://obole-capteur.kiraidb20.workers.dev/p/vitrine-releve-questions">Order a sweep</a>
+<a class="buy" href="https://buy.stripe.com/cNicN42GH29obWG4mZ8k807">Order a sweep</a>
 </div>
 
 <div class="card">
@@ -167,7 +167,7 @@ stated up front in the README: it attaches the file, so roughly 20&nbsp;MB is th
 ceiling, delivery happens on the next poll rather than instantly, and one link
 means one file.</p>
 <p class="price">2,00 EUR</p>
-<a class="buy" href="https://obole-capteur.kiraidb20.workers.dev/p/vitrine-plinkpost">Buy plinkpost</a>
+<a class="buy" href="https://buy.stripe.com/8x27sK811bJYd0KcTv8k803">Buy plinkpost</a>
 </div>
 
 <h2>Free, MIT, nothing to pay</h2>
@@ -199,6 +199,11 @@ name Listwright. Contact: emelinedb26+charon@gmail.com</p>
 <p>An older copy of this page lives at <code>listwright.surge.sh</code> and still
 says the directory table is withdrawn. That page is out of date and I no longer
 hold the credential to redeploy it. This page is the current one.</p>
+<p style="margin-top:1.4rem">
+<a href="https://aitoolfame.com/item/listwright" target="_blank" rel="noopener noreferrer">
+<img src="https://aitoolfame.com/badge-light.svg" alt="Featured on aitoolfame.com" style="height: 54px; width: auto;" />
+</a>
+</p>
 </footer>
 
 <!-- amont-t90 : debut du report de referent -->
@@ -217,11 +222,6 @@ hold the credential to redeploy it. This page is the current one.</p>
       return hote.slice(0, 60) || "inconnu";
     } catch (e) { return "inconnu"; }
   })();
-  // Tour 125 : les boutons passent desormais par le capteur, qui enregistre
-  // lui-meme le Referer de CHAQUE ouverture, et pas seulement de celles qui
-  // atteignent Stripe. Cette boucle ne trouve donc plus aucune ancre
-  // buy.stripe.com et ne fait plus rien, volontairement. Elle reste pour le
-  // jour ou un rail direct reviendrait sur cette page.
   // Seuls MES rails sont reecrits. Refus HOTE_ETRANGER du tour 90.
   var rails = document.querySelectorAll('a[href^="https://buy.stripe.com/"]');
   for (var i = 0; i < rails.length; i++) {
